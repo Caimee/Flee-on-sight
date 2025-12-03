@@ -7,7 +7,7 @@ import static org.sample.fleeonsight.LogicAttributes.SNEAK_RANGE;
 
 public class PlayerStateManager {
 
-    //player的sneaking状态机
+    // logic of sneaking state machine
     public static void updateSneakingState(PlayerEntity player, PlayerState state) {
         if (!state.isSneaking && player.isSneaking()) {
             state.isSneaking = true;
