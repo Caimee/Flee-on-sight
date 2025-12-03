@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "fleeonsight_",
+  "version": "1.1.2",
+  "name": "FleeOnsight_",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/fleeonsight_/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.sample.fleeonsight_.client.Fleeonsight_DataGenerator"
+    ],
+    "client": [
+      "org.sample.fleeonsight_.client.Fleeonsight_Client"
+    ],
+    "main": [
+      "org.sample.fleeonsight_.Fleeonsight_"
+    ]
+  },
+  "mixins": [
+    "fleeonsight_.mixins.json",
+    {
+      "config": "fleeonsight_.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "fabric": "*",
+    "minecraft": "1.21.10"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "projectPath": ":",
+  "classpaths": {
+    "test": [
+      "/Users/caim/Project/cache/FleeOnsight_/build/classes/java/test",
+      "/Users/caim/Project/cache/FleeOnsight_/build/resources/test",
+      "/Users/caim/Project/cache/FleeOnsight_/out/production/FleeOnsight_.test",
+      "/Users/caim/Project/cache/FleeOnsight_/out/test/classes",
+      "/Users/caim/Project/cache/FleeOnsight_/out/test/resources"
+    ],
+    "client": [
+      "/Users/caim/Project/cache/FleeOnsight_/build/classes/java/client",
+      "/Users/caim/Project/cache/FleeOnsight_/build/resources/client",
+      "/Users/caim/Project/cache/FleeOnsight_/out/production/FleeOnsight_.client",
+      "/Users/caim/Project/cache/FleeOnsight_/out/client/classes",
+      "/Users/caim/Project/cache/FleeOnsight_/out/client/resources"
+    ],
+    "main": [
+      "/Users/caim/Project/cache/FleeOnsight_/build/classes/java/main",
+      "/Users/caim/Project/cache/FleeOnsight_/build/resources/main",
+      "/Users/caim/Project/cache/FleeOnsight_/build/devlibs/FleeOnsight_-1.1.2-dev.jar",
+      "/Users/caim/Project/cache/FleeOnsight_/out/production/FleeOnsight_.main",
+      "/Users/caim/Project/cache/FleeOnsight_/out/production/classes",
+      "/Users/caim/Project/cache/FleeOnsight_/out/production/resources"
+    ]
+  }
+}
