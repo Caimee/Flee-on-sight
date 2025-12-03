@@ -1,11 +1,11 @@
-# 🐑 Flee on Sight
-Your animals are now introverts ！
+# 🐑 Flee On Sight
+## Your animals are now introverts ！
 
+Wild sheep, cows, and pigs will now stay alert when a player approaches them, just like wild animals in real life and in other games.
+  
 ## Increase the difficulty of approaching wild animals, and make the experience more naturalistic.
 
-> Sheep, cows, and pigs will now stay alert when a player approaches them.
-
-> They sprint away until the player is far enough, and even panic as a herd when one animal bolts.
+> Wild animals sprint away until the player is far enough, and even panic as a herd when one animal bolts.
 
 > They exhibit group behaviors, fleeing together as a pack when one gets startled.
 
@@ -18,4 +18,5 @@ Your animals are now introverts ！
 <img width="2120" height="1368" alt="2025-12-02_20 06 30" src="https://github.com/user-attachments/assets/03960fd1-1277-468c-bd8b-24227878b3e9" />
 
 ## More animals are planned for future updates
+
 
