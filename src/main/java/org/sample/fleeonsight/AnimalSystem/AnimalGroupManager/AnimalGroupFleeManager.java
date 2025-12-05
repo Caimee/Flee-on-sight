@@ -1,10 +1,9 @@
 package org.sample.fleeonsight.AnimalSystem.AnimalGroupManager;
 
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.AnimalEntity;
-import net.minecraft.entity.passive.CowEntity;
-import net.minecraft.entity.passive.PigEntity;
-import net.minecraft.entity.passive.SheepEntity;
 import org.sample.fleeonsight.LogicConfig;
 
 import java.util.function.Predicate;
@@ -19,7 +18,8 @@ public class AnimalGroupFleeManager {
     /**
      * Generic method to spread fleeing behavior among animals of the same type.
      */
-    public static <T extends AnimalEntity> void manageGroupFlee(T animal, EntityType<T> type) {
+    public static <T extends AnimalEntity> void manageGroupFlee(T animal) {
+        EntityType<?> type = animal.getType();
 
         // skip if the animal is not fleeing
         if (!getMobState(animal).isFleeing) return;
@@ -34,24 +34,12 @@ public class AnimalGroupFleeManager {
         );
 
         // Set fleeing state to each nearby animal that is not fleeing
-        for (T other : nearby) {
-            var state = getMobState(other);
+        for (Entity other : nearby) {
+            var state = getMobState((MobEntity) other);
             if (!state.isFleeing) {
                 state.isFleeing = true;
             }
         }
     }
-
-// wrappers for specific animal types
-    public static void manageSheepGroupFlee(SheepEntity sheep) {
-        manageGroupFlee(sheep, EntityType.SHEEP);
-    }
-
-    public static void manageCowGroupFlee(CowEntity cow) {
-        manageGroupFlee(cow, EntityType.COW);
-    }
-
-    public static void managePigGroupFlee(PigEntity pig) {
-        manageGroupFlee(pig, EntityType.PIG);
-    }
 }
+

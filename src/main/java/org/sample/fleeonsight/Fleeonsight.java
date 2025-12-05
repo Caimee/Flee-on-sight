@@ -11,7 +11,6 @@ import org.sample.fleeonsight.PlayerSystem.PlayerState;
 
 import java.util.WeakHashMap;
 
-import static org.sample.fleeonsight.EntityUtils.*;
 import static org.sample.fleeonsight.ProcessTick.ProcessAnimalAI.*;
 
 public class Fleeonsight implements ModInitializer {
@@ -28,12 +27,7 @@ public class Fleeonsight implements ModInitializer {
     private void onWorldTick(ServerWorld world) {
 
         // Process animal AI each tick
-        var sheepGroup = getAllLoadedSheep(world);
-        var pigGroup = getAllLoadedPig(world);
-        var cowGroup = getAllLoadedCow(world);
-        processSheepAI(world, sheepGroup);
-        processCowAI(world, cowGroup);
-        processPigAI(world, pigGroup);
+        processAnimalAI(world);
     }
 }
 
